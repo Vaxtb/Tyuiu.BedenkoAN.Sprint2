@@ -1,36 +1,40 @@
-﻿using Tyuiu.BedenkoAN.Sprint2.Task0.V16.Lib;
-
-namespace Tyuiu.BedenkoAN.Sprint2.Task0.V16
+﻿using Tyuiu.BedenkoAN.Sprint2.Task1.V13.Lib;
+namespace Tyuiu.BedenkoAN.Sprint2.Task1.V13
 {
     internal class Program
     {
         static void Main(string[] args)
-
         {
-
             DataService ds = new DataService();
-            int x = 1025;
-            int y = 275;
+            int a = 145;
+            int b = 916;
+            int c = 164;
+            int d = 137;
+
             bool[] res = new bool[6];
-            res = ds.GetCompareOperations(x, y);
+            res = ds.GetLogicOperations(a, b, c, d);
+
             Console.Title = "Спринт #2 | Выполнил: Беденко А.Н. | ПИНб-26-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
             Console.WriteLine("* Тема: Операции сравнения                                                *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #16                                                             *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #13                                                             *");
             Console.WriteLine("* Выполнил: Беденко Алексей Николаевич | ПИНб-26-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу из операций сравнений (==, !=, <, >, <=, >           *");
-            Console.WriteLine("* последовательность операций не должна нарушаться)                       *");
-            Console.WriteLine("* и арифметических выражений, которая вернет логическую последовательность(массив):*");
-            Console.WriteLine("* (True, False, True, False, True, False), при x = 1025, y = 275          *");
+            Console.WriteLine("* Написать программу из операций сравнений (==, !=, <, >, <=, >=,         *");
+            Console.WriteLine("* последовательность можно чередовать, но использовать один раз в выражении)*");
+            Console.WriteLine("* и логических операций (|, &, ||, &&, !, ^, последовательность операций не должна нарушаться),*");
+            Console.WriteLine("* а также арифметических выражений, которая вернет логическую последовательность(массив):*");
+            Console.WriteLine("* (True, True, True, True, True, False), при a = 145, b = 916, c = 164, d = 137*");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("X = " + x);
-            Console.WriteLine("Y = " + y);
+            Console.WriteLine("A = " + a);
+            Console.WriteLine("B = " + b);
+            Console.WriteLine("C = " + c);
+            Console.WriteLine("D = " + d);
 
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
@@ -39,10 +43,6 @@ namespace Tyuiu.BedenkoAN.Sprint2.Task0.V16
                 Console.WriteLine(res[i]);
             }
             Console.ReadLine();
-
-
-
-
         }
     }
 }

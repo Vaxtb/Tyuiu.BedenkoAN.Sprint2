@@ -14,7 +14,7 @@ namespace Tyuiu.BedenkoAN.Sprint2.Task2.V22.Test
             int y = 4;
             bool res = ds.CheckDotInShadedArea(x, y);
             bool wait = true;
-            CollectionAssert.AreEqual(wait , res);
+            Assert.AreEqual(wait , res);
             
 
         }

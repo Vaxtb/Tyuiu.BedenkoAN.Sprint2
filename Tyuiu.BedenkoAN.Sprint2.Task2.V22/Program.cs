@@ -30,10 +30,10 @@ namespace Tyuiu.BedenkoAN.Sprint2.Task2.V22
             x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите координату Y:");
             y = Convert.ToInt32(Console.ReadLine());
-            bool[] res = ds.GetCompareOperations(x, y);
+            bool res = ds.CheckDotInShadedArea(x, y);
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            if (res[0]== true)
+            if (res == true)
             {
                 Console.WriteLine("Точка находится в заштрихованной области");
             }

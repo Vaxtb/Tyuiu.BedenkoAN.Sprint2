@@ -12,9 +12,9 @@ namespace Tyuiu.BedenkoAN.Sprint2.Task2.V22.Test
             DataService ds = new DataService();
             int x = 3;
             int y = 4;
-            bool[] res = ds.GetCompareOperations(x, y);
+            bool res = ds.CheckDotInShadedArea(x, y);
             bool wait = true;
-            CollectionAssert.AreEqual(new bool[] { wait }, res);
+            CollectionAssert.AreEqual(wait , res);
             
 
         }

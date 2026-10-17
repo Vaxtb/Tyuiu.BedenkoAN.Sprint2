@@ -10,7 +10,7 @@ namespace Tyuiu.BedenkoAN.Sprint2.Task6.V4
             Console.WriteLine("* Спринт #2                                                               *");
             Console.WriteLine("* Тема: Получение результата из switch                                    *");
             Console.WriteLine("* Задание #6                                                              *");
-            Console.WriteLine("* Вариант #4                                                             *");
+            Console.WriteLine("* Вариант #4                                                              *");
             Console.WriteLine("* Выполнил: Беденко Алексей Николаевич | ПИНб-26-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");

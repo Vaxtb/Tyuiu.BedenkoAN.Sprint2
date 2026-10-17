@@ -27,7 +27,7 @@ namespace Tyuiu.BedenkoAN.Sprint2.Task5.V11.Test
             
         }
         [TestMethod]
-        public void FindDateOfNextDay_InvalidMonth_ThrowsArgumentException()
+        public void TestMethod2()
         {
             
             DataService ds = new DataService();
